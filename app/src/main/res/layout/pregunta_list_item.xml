@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- Layout for a single list item that displays an pregunta -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingEnd="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingStart="16dp">
+
+    <TextView
+        android:id="@+id/numero"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/numero_circle"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        tools:text="1" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/contenido"
+            android:text="¿Qué...?"
+            style="@style/HeaderTextStyle"/>
+
+        <RadioGroup
+            android:id="@+id/rp1_radio_group"
+            android:visibility="gone"
+            style="@style/HeaderRadioGroupStyle">
+            <RadioButton
+                android:id="@+id/r1p1_radio_button"
+                style="@style/HeaderRadioStyle" />
+            <RadioButton
+                android:id="@+id/r2p1_radio_button"
+                style="@style/HeaderRadioStyle" />
+            <RadioButton
+                android:id="@+id/r3p1_radio_button"
+                style="@style/HeaderRadioStyle" />
+            <RadioButton
+                android:id="@+id/r4p1_radio_button"
+                style="@style/HeaderRadioStyle" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/r1p2_checkbox"
+            android:visibility="gone"
+            style="@style/HeaderCheckBoxStyle" />
+        <CheckBox
+            android:id="@+id/r2p2_checkbox"
+            android:visibility="gone"
+            style="@style/HeaderCheckBoxStyle" />
+        <CheckBox
+            android:id="@+id/r3p2_checkbox"
+            android:visibility="gone"
+            style="@style/HeaderCheckBoxStyle" />
+        <CheckBox
+            android:id="@+id/r4p2_checkbox"
+            android:visibility="gone"
+            style="@style/HeaderCheckBoxStyle"
+            android:layout_marginBottom="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/rp3_radio_group"
+            android:visibility="gone"
+            style="@style/HeaderRadioGroupStyle">
+            <RadioButton
+                android:id="@+id/r1p3_radio_button"
+                style="@style/HeaderRadioStyle" />
+            <RadioButton
+                android:id="@+id/r2p3_radio_button"
+                style="@style/HeaderRadioStyle"/>
+            <RadioButton
+                android:id="@+id/r3p3_radio_button"
+                style="@style/HeaderRadioStyle" />
+            <RadioButton
+                android:id="@+id/r4p3_radio_button"
+                style="@style/HeaderRadioStyle" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/rp4_edit_text"
+            android:visibility="gone"
+            style="@style/HeaderEditStyle" />
+
+        <RadioGroup
+            android:id="@+id/rp5_radio_group"
+            android:visibility="gone"
+            style="@style/HeaderRadioGroupStyle">
+            <RadioButton
+                android:id="@+id/r1p5_radio_button"
+                style="@style/HeaderRadioStyle" />
+            <RadioButton
+                android:id="@+id/r2p5_radio_button"
+                style="@style/HeaderRadioStyle" />
+            <RadioButton
+                android:id="@+id/r3p5_radio_button"
+                style="@style/HeaderRadioStyle" />
+            <RadioButton
+                android:id="@+id/r4p5_radio_button"
+                style="@style/HeaderRadioStyle" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/r1p6_checkbox"
+            android:visibility="gone"
+            style="@style/HeaderCheckBoxStyle" />
+        <CheckBox
+            android:id="@+id/r2p6_checkbox"
+            android:visibility="gone"
+            style="@style/HeaderCheckBoxStyle" />
+        <CheckBox
+            android:id="@+id/r3p6_checkbox"
+            android:visibility="gone"
+            style="@style/HeaderCheckBoxStyle" />
+        <CheckBox
+            android:id="@+id/r4p6_checkbox"
+            android:visibility="gone"
+            style="@style/HeaderCheckBoxStyle"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/rp7_edit_text"
+            android:visibility="gone"
+            style="@style/HeaderEditStyle" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:visibility="gone" />
+        <RadioGroup
+            android:id="@+id/rp8_radio_group"
+            android:visibility="gone"
+            style="@style/HeaderRadioGroupStyle">
+            <RadioButton
+                android:id="@+id/r1p8_radio_button"
+                style="@style/HeaderRadioStyle" />
+            <RadioButton
+                android:id="@+id/r2p8_radio_button"
+                style="@style/HeaderRadioStyle" />
+            <RadioButton
+                android:id="@+id/r3p8_radio_button"
+                style="@style/HeaderRadioStyle" />
+            <RadioButton
+                android:id="@+id/r4p8_radio_button"
+                style="@style/HeaderRadioStyle" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/rp9_edit_text"
+            android:visibility="gone"
+            style="@style/HeaderEditStyle"/>
+
+        <RadioGroup
+            android:id="@+id/rp10_radio_group"
+            android:visibility="gone"
+            style="@style/HeaderRadioGroupStyle" >
+            <RadioButton
+                android:id="@+id/r1p10_radio_button"
+                style="@style/HeaderRadioStyle" />
+            <RadioButton
+                android:id="@+id/r2p10_radio_button"
+                style="@style/HeaderRadioStyle" />
+            <RadioButton
+                android:id="@+id/r3p10_radio_button"
+                style="@style/HeaderRadioStyle" />
+            <RadioButton
+                android:id="@+id/r4p10_radio_button"
+                style="@style/HeaderRadioStyle" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

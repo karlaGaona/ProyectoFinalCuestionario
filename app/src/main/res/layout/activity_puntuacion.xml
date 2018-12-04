@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Puntuacion">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    style="@style/HeaderMainImagetStyle" />
+                <TextView
+                    style="@style/HeaderMainTextStyle"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <TextView
+                android:text="@string/puntuacion"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="30sp"
+                android:textAlignment="center" />
+            <TextView
+                android:id="@+id/puntaje_text_view"
+                android:text="0"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:background="#8BC34A" />
+            <TextView
+                android:text="@string/preguntasCorrectas"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:paddingTop="15dp"/>
+            <ListView
+                android:id="@+id/listaPregCorrectas_text_view"
+                android:text="0"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:textSize="15sp" />
+            <Button
+                style="@style/HeaderButtonStyle"
+                android:text="@string/enviar"
+                android:onClick="guardar"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
